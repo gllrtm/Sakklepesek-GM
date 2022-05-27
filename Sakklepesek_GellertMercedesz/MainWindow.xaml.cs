@@ -22,8 +22,6 @@ namespace Sakklepesek_GellertMercedesz
     {
         Button[,] mezok;
 
-        public object Ize { get; private set; }
-
         public MainWindow()
         {
             InitializeComponent();
@@ -88,6 +86,7 @@ namespace Sakklepesek_GellertMercedesz
         {
             Button babu = sender as Button;
             babu.Content = menu.SelectedItem;
+         
         }
     }
 }
