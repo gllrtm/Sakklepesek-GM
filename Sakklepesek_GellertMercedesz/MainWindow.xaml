@@ -6,9 +6,17 @@
         xmlns:local="clr-namespace:Sakklepesek_GellertMercedesz"
         mc:Ignorable="d"
         Title="Sakklépések - Gellért Mercédesz" Height="800" Width="800">
-    <Grid Margin="100,124,100,88">
-        <ComboBox HorizontalAlignment="Left" Height="37" Margin="1,-84,-1,0" VerticalAlignment="Top" Width="592"/>
-        <Label Name="babuPozicioja" Content="" HorizontalAlignment="Left" Height="34" Margin="1,566,-1,-43" VerticalAlignment="Top" Width="592"/>
+    <Grid Name="tabla" Margin="80,104,80,68">
+        <ComboBox Name="menu" HorizontalAlignment="Left" Height="32" Margin="-36,-72,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.113,0.757">
+            <RadioButton Content="♔ (király)"/>
+            <RadioButton Content="♕ (királynő)"/>
+            <RadioButton Content="♖ (bástya)"/>
+            <RadioButton Content="♗ (futó)"/>
+            <RadioButton Content="♘ (pacek paci)"/>
+            <RadioButton Content="♙ (fehér gyalog)"/>
+            <RadioButton Content="♟ (fekete gyalog)"/>
+        </ComboBox>
+        <Label Name="babuPozicioja" Content="" HorizontalAlignment="Left" Height="34" Margin="0,596,0,-33" VerticalAlignment="Top" Width="632"/>
 
     </Grid>
 
