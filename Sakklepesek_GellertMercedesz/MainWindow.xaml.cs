@@ -21,6 +21,9 @@ namespace Sakklepesek_GellertMercedesz
     public partial class MainWindow : Window
     {
         Button[,] mezok;
+
+        public object Ize { get; private set; }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -74,10 +77,17 @@ namespace Sakklepesek_GellertMercedesz
                 {
                     mezok[i, j] = new Button(); 
                     tabla.Children.Add(mezok[i, j]);
+                    mezok[i, j].MouseUp += Kattintas;
                     Grid.SetRow(mezok[i, j], i + 1);
                     Grid.SetColumn(mezok[i, j], j + 1);
                 }
             }
+        }
+
+        private void Kattintas(object sender, MouseButtonEventArgs e)
+        {
+            Button babu = sender as Button;
+            babu.Content = menu.SelectedItem;
         }
     }
 }
